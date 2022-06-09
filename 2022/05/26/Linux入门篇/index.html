@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="引言： 目前IT行业的服务程序都是跑在服务器上的，其实服务器就是一种特殊的，性能强的电脑。服务器的操作系统绝大多数都是Linux。  总之，只要接触到了服务器，那就必须学习Linux。 . linux 本质是一个操作系统。 其他操作系统还有： window, macOS  . linux 的诞生：linux之父—linus torvalds(李纳斯.托瓦兹) linus的类unix系统，所以叫li">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux入门篇">
+<meta property="og:url" content="http://example.com/2022/05/26/Linux%E5%85%A5%E9%97%A8%E7%AF%87/index.html">
+<meta property="og:site_name" content="xuechoa的博客">
+<meta property="og:description" content="引言： 目前IT行业的服务程序都是跑在服务器上的，其实服务器就是一种特殊的，性能强的电脑。服务器的操作系统绝大多数都是Linux。  总之，只要接触到了服务器，那就必须学习Linux。 . linux 本质是一个操作系统。 其他操作系统还有： window, macOS  . linux 的诞生：linux之父—linus torvalds(李纳斯.托瓦兹) linus的类unix系统，所以叫li">
+<meta property="og:locale">
+<meta property="og:image" content="http://example.com/2022/05/26/Linux%E5%85%A5%E9%97%A8%E7%AF%87/%E7%A1%AC%E4%BB%B6%E7%A4%BA%E6%84%8F.png">
+<meta property="article:published_time" content="2022-05-26T09:05:05.000Z">
+<meta property="article:modified_time" content="2022-05-28T08:08:37.826Z">
+<meta property="article:author" content="xuechoa">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/05/26/Linux%E5%85%A5%E9%97%A8%E7%AF%87/%E7%A1%AC%E4%BB%B6%E7%A4%BA%E6%84%8F.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://example.com/2022/05/26/Linux入门篇/"/>
+
+
+
+
+
+  <title>Linux入门篇 | xuechoa的博客</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">xuechoa的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/26/Linux%E5%85%A5%E9%97%A8%E7%AF%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xuechoa的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Linux入门篇</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-26T17:05:05+08:00">
+                2022-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><code>引言：</code> 目前IT行业的服务程序都是跑在服务器上的，其实服务器就是一种特殊的，性能强的电脑。服务器的操作系统绝大多数都是Linux。  总之，只要接触到了服务器，那就必须学习Linux。</p>
+<p>.</p>
+<p>linux 本质是一个操作系统。</p>
+<p>其他操作系统还有： window, macOS </p>
+<p>.</p>
+<h4 id="linux-的诞生："><a href="#linux-的诞生：" class="headerlink" title="linux 的诞生："></a>linux 的诞生：</h4><p>linux之父—linus torvalds(李纳斯.托瓦兹)</p>
+<p>linus的类unix系统，所以叫linux。</p>
+<p>.</p>
+<p>.</p>
+<h4 id="Linux和Unix的渊源："><a href="#Linux和Unix的渊源：" class="headerlink" title="Linux和Unix的渊源："></a>Linux和Unix的渊源：</h4><p>贝尔实验室   </p>
+<p>Ken Thompson—Unix之父</p>
+<p>Dennis Ritchie</p>
+<p>1969,ken主导开发出了一种多用户分时操作系统—Unix（对应之前开发失败的multics）</p>
+<p>设计初衷：简洁高效</p>
+<p>开发系统时觉得用汇编语言写太麻烦了，决定自己开发高级语言（dennis主导）： C语言。</p>
+<p>unix 极其稳定，大型系统一般都使用unix系统，比如银行等大企业。</p>
+<p>linux协议：如果你用了linux写内核，你写出来的东西也必须开源。</p>
+<p>FreeBSD协议：如果你用了FreeBSD写内核，写出来的系统可以不开源，适用于商业化。</p>
+<p>由于unix不开源，所以荷兰教授Andrew Tanenbanm 借鉴unix系统的思想写了新系统Minix系统并开源。</p>
+<p>但是minix系统关于终端仿真器的部分全部没做，因为Andrew Tanenbanm认为上网不是操作系统该包含的部分。</p>
+<p>于是linus torvalds(李纳斯.托瓦兹)基于Minix从终端仿真器开始重新写了一个新系统—-linux，并开源。</p>
+<p>—–git也是李纳斯写的，用于分布式代码管理。</p>
+<p>.</p>
+<h4 id="GNU-Linux"><a href="#GNU-Linux" class="headerlink" title="GNU/Linux"></a>GNU/Linux</h4><p>Richard Stallman—–自由软件运动的倡导者</p>
+<p>他提倡每个人写的软件都应该开源</p>
+<p>1985年，GNU宣言：要开发一套完全自由的，免费的，兼容于Unix的，又不是Unix的操作系统。</p>
+<p><strong>GNU：</strong>GNU is  Not Unix</p>
+<p>1989 GPL协议： 一个自由软件发布的协议</p>
+<p>只要遵循这个协议，那就说明该软件是完全开源的。</p>
+<p>GPL维护用户的权力，而BSD更偏向公司和软件开发者的权力</p>
+<p><img src="/2022/05/26/Linux%E5%85%A5%E9%97%A8%E7%AF%87/%E7%A1%AC%E4%BB%B6%E7%A4%BA%E6%84%8F.png"></p>
+<p>从上图可以看出，计算机的硬件和我们平时接触的那些应用软件之间并不是直接接触的，他们中间还有两层东西：一个是内核，也就是操作系统：操作系统根据软件的需求去控制硬件的动作；另一个是命令解释层：用于将高级语言指令翻译成机器语言，在linux系统中这体现为shell.shell 的直接翻译是 壳，框架的意思。程序员平时输入指令就在shell中，shell将我们的高级语言翻译给操作系统内核，操作系统再去执行相应的操作。</p>
+<p>.</p>
+<p>狭义的Linux：Linux内核；</p>
+<p>广义的Linux： GNU/Linux，除了内核，还包括命令解释层shell和外围应用。</p>
+<p>.</p>
+<p>.</p>
+<h4 id="linux发行版："><a href="#linux发行版：" class="headerlink" title="linux发行版："></a>linux发行版：</h4><p>1.最有名的—-Red Hat系列</p>
+<h4 id="商业版为Red-Hat-Enterprise-Linux"><a href="#商业版为Red-Hat-Enterprise-Linux" class="headerlink" title="商业版为Red Hat Enterprise Linux"></a>商业版为Red Hat Enterprise Linux</h4><p>免费版包括： fedoro 和 CentOS</p>
+<p>CentOS就是除去商标的商业版，稳定性和商业版一样。</p>
+<p>/</p>
+<p>2.debian系列</p>
+<p>ubuntu就是基于debian</p>
+<p>/</p>
+<p>3.suse</p>
+<p>号称世界上最华丽的操作系统</p>
+<p>他的桌面环境是用KDE写的，可能不够稳定，但是极其漂亮华丽；</p>
+<p>免费版本：open SUSE</p>
+<p>/</p>
+<p>目前国内用的最多的就是CentOS和ubuntu</p>
+<p>android 系统和鸿蒙系统的底层内核也都是基于Linux的底层内核</p>
+<p>.</p>
+<p>.</p>
+<h4 id="linux-VSWindows"><a href="#linux-VSWindows" class="headerlink" title="linux VSWindows"></a>linux VSWindows</h4><p>![](./Linux入门篇/linux vs windows.png)</p>
+<p>.</p>
+<p>.</p>
+<p>入门篇完。</p>
+<p>下一篇-&gt; Linux 基础篇</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2022/05/26/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" rel="next" title="深入理解计算机系统_信息的表示和处理">
+                <i class="fa fa-chevron-left"></i> 深入理解计算机系统_信息的表示和处理
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/05/28/linux%E5%9F%BA%E7%A1%80%E7%AF%87/" rel="prev" title="linux基础篇（包含vim编辑器）">
+                linux基础篇（包含vim编辑器） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#linux-%E7%9A%84%E8%AF%9E%E7%94%9F%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">linux 的诞生：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux%E5%92%8CUnix%E7%9A%84%E6%B8%8A%E6%BA%90%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">Linux和Unix的渊源：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GNU-Linux"><span class="nav-number">3.</span> <span class="nav-text">GNU&#x2F;Linux</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#linux%E5%8F%91%E8%A1%8C%E7%89%88%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">linux发行版：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%95%86%E4%B8%9A%E7%89%88%E4%B8%BARed-Hat-Enterprise-Linux"><span class="nav-number">5.</span> <span class="nav-text">商业版为Red Hat Enterprise Linux</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#linux-VSWindows"><span class="nav-number">6.</span> <span class="nav-text">linux VSWindows</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xuechoa</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

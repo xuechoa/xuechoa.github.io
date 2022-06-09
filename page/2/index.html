@@ -1,0 +1,2004 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="C++,算法，数据结构，操作系统，linux，计算机系统，git，爱曙曙。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="xuechoa的博客">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="xuechoa的博客">
+<meta property="og:description" content="C++,算法，数据结构，操作系统，linux，计算机系统，git，爱曙曙。">
+<meta property="og:locale">
+<meta property="article:author" content="xuechoa">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://example.com/page/2/"/>
+
+
+
+
+
+  <title>xuechoa的博客</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">xuechoa的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/30/linux%E5%AE%9E%E6%93%8D%E7%AF%87-shell%E5%91%BD%E4%BB%A4%E6%95%B4%E4%BD%93%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xuechoa的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/05/30/linux%E5%AE%9E%E6%93%8D%E7%AF%87-shell%E5%91%BD%E4%BB%A4%E6%95%B4%E4%BD%93%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4/" itemprop="url">linux实操篇--shell命令整体介绍及帮助命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-30T14:04:03+08:00">
+                2022-05-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>.</p>
+<p>shell可以看作是一个命令解释器，提供了一个交互式的文本控制台界面。我们在shell终端输入命令，shell终端就会对它进行解释，并将它交给Linux内核进行执行。</p>
+<p>所以说，shell就是一个连接外部应用和Linux内核的一个桥梁。</p>
+<p>.</p>
+<p>man(manua,手册) 命令获得帮助信息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# man ls</span><br></pre></td></tr></table></figure>
+
+<p>例如上面代码查询ls语句的作用。查询完直接按q退出。</p>
+<p>.</p>
+<h4 id="内置命令和外部命令："><a href="#内置命令和外部命令：" class="headerlink" title="内置命令和外部命令："></a>内置命令和外部命令：</h4><p>一部分基础功能的系统命令是直接内嵌在shell 中的，系统加载启动之后会随着shell一起加载启动，常驻在系统内存中，这部分命令被称为“内置命令”；</p>
+<p>相应的其他命令被称为“外部命令”。</p>
+<p>一般命令都是放在usr下面的bin目录或者sbin目录。</p>
+<p>type目录可以判断一个是内嵌还是外部命令。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/29/Linux%E5%9F%BA%E7%A1%80%E7%AF%87-%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xuechoa的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/05/29/Linux%E5%9F%BA%E7%A1%80%E7%AF%87-%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/" itemprop="url">Linux基础篇--系统管理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-29T14:14:13+08:00">
+                2022-05-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>进程：</strong>在计算机中一个正在执行的程序或者命令；</p>
+<p><strong>服务：</strong>计算机启动之后，一直存在的进程，他是常驻内存的，一般被称作“服务”。</p>
+<p>守护进程（deman，守护），整个系统的服务要把它运行起来，需要有一个进程来对他进行管理，这个进程就被叫做守护进程。在Linux里面，可以理解为系统服务和守护进程就是一回事。</p>
+<p>.</p>
+<p>基本语法：</p>
+<h4 id="systemctl-start-stop-restart-status-服务名"><a href="#systemctl-start-stop-restart-status-服务名" class="headerlink" title="systemctl  start|stop|restart|status    服务名"></a>systemctl  start|stop|restart|status    服务名</h4><p>查看服务的方法：</p>
+<p>/usr/lib/systemd/system</p>
+<p>.</p>
+<h4 id="linux进程运行级别"><a href="#linux进程运行级别" class="headerlink" title="linux进程运行级别"></a>linux进程运行级别</h4><p>查询当前运行级别：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# systemctl get-default</span><br></pre></td></tr></table></figure>
+
+<p>Linux下常用的运行级别是级别3和级别5</p>
+<p>级别3：完全的多用户的状态，登陆后进入控制台命令行模式，也就是没有图形化界面</p>
+<p>级别5：就是图形化界面的控制台</p>
+<p>如何切换到级别3？   </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# init 3</span><br></pre></td></tr></table></figure>
+
+<p>.</p>
+<h4 id="关机重启命令"><a href="#关机重启命令" class="headerlink" title="关机重启命令"></a>关机重启命令</h4><p>关机命令：（默认一分钟以后关机）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# shutdown</span><br></pre></td></tr></table></figure>
+
+<p>取消关机命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# shutdown -c</span><br></pre></td></tr></table></figure>
+
+<p>系统在执行关机操作之前，通常要执行 sync 操作</p>
+<p>sync操作的内容是将数据由内存同步到硬盘中</p>
+<p>halt:  停机，关闭系统但是不断电</p>
+<p>poweroff: 关机，断电</p>
+<p>reboot:  重启，等同于shutdown -r now</p>
+<p>.</p>
+<p>.</p>
+<p>基础篇结束</p>
+<p>进入实操篇，，，，，</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/28/Linux%E5%9F%BA%E7%A1%80%E7%AF%87%E2%80%94%E2%80%94%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xuechoa的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/05/28/Linux%E5%9F%BA%E7%A1%80%E7%AF%87%E2%80%94%E2%80%94%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/" itemprop="url">Linux基础篇——网络配置</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-28T21:12:36+08:00">
+                2022-05-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="网络配置和系统管理操作"><a href="#网络配置和系统管理操作" class="headerlink" title="网络配置和系统管理操作"></a>网络配置和系统管理操作</h3><p>windows系统下如何查询IP？</p>
+<p>home+r 打开运行窗口，输入cmd打开命令行窗口，输入ipconfig。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\xuechao&gt;ipconfig</span><br></pre></td></tr></table></figure>
+
+<p> 本机查询得到：IPv4 地址 . . . . . . . . . . . . : 10.165.178.25</p>
+<p>用这种方式查询得到的是B类ip，也即路由或局域网二次分配的ip地址。</p>
+<p>如何查询A类ip？ 浏览器输入ip查询。</p>
+<p>linux系统下如何查询ip？</p>
+<p>在命令行窗口输入： ifconfig</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# ifconfig</span><br></pre></td></tr></table></figure>
+
+<p>如何看当前电脑（主机或者虚拟机）跟其他网络是否连通呢？</p>
+<p>在命令行输入：   ping ip(ip是具体的IP值)</p>
+<p>.</p>
+<h4 id="VMware-提供了三种网络连接模式："><a href="#VMware-提供了三种网络连接模式：" class="headerlink" title="VMware 提供了三种网络连接模式："></a>VMware 提供了三种网络连接模式：</h4><p>1.桥接模式</p>
+<p>虚拟机直接连接外部物理网络，主机起到了网桥的作用，也就相当于中间牵线搭桥的作用。在这种模式下虚拟机可以直接访问外部网络，并且对外部网络是可见的，也就是说以一种跟主机并列的级别出现；</p>
+<p>在这种模式下，pc的ip和虚拟机的ip必须在同一个网段下，也就是ip的前三位必须一样。</p>
+<p>这种模式的缺点是要占用ip但是路由器下分配的ip是有限的。</p>
+<p>2.NAT模式(network address transition,网络地址转换)</p>
+<p>虚拟机和主机构建一个专用网络，并且通过虚拟网络地址转换（NAT）设备对IP进行转换。虚拟机通过共享主机ip可以访问 外部网络，但是外部网络无法访问虚拟机。</p>
+<p>internet通过路由器给我们的电脑分配ip，使其能连接网络并上网。nat模式下虚拟机的联网方式与此类似，相当于我们的电脑变成了一个外网，nat设备就相当于路由器，由该设备给虚拟机分配ip，所有虚拟机可以连接到我们的主机；</p>
+<p>但是这种方式下主机是连接不到虚拟机的，就好像外网是直接连接不到我们的电脑的，怎么办呢？</p>
+<p>我们的主机自己模拟出来一个网卡，这个网卡接到当前虚拟子网的路由器上，这样pc就和所有的虚拟机在同一个网段了，这个网卡就是VMnet 8.</p>
+<p>这种模式下可以访问外网，但是外网不能访问我们，安全性比较高</p>
+<p>3.仅主机模式</p>
+<p>虚拟机只与主机共享一个专用网络，与外部网络无法通信。</p>
+<p>与NAT模式相比仅仅是删去了那个路由器，不能访问外网了，但是依然虚拟了一个网卡，这个网卡就是VMnet 1.</p>
+<p>.</p>
+<h4 id="配置主机名"><a href="#配置主机名" class="headerlink" title="配置主机名"></a>配置主机名</h4><p>hostname  查询主机名</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# hostname</span><br><span class="line">hadoop100</span><br></pre></td></tr></table></figure>
+
+<p>如何快速修改主机名？</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# hostnamectl set-hostname spark10</span><br><span class="line">[root@hadoop100 ~]# hostname</span><br><span class="line">spark10</span><br></pre></td></tr></table></figure>
+
+<p>可以看到主机名已经由hadoop100修改为spark10</p>
+<p>.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/28/linux%E5%9F%BA%E7%A1%80%E7%AF%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xuechoa的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/05/28/linux%E5%9F%BA%E7%A1%80%E7%AF%87/" itemprop="url">linux基础篇（包含vim编辑器）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-28T14:13:26+08:00">
+                2022-05-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="centos系统下的常用操作："><a href="#centos系统下的常用操作：" class="headerlink" title="centos系统下的常用操作："></a>centos系统下的常用操作：</h4><p>进入终端界面： Ctrl+Alt+f2~f6</p>
+<p>退出终端界面进入图形界面： Ctrl+Alt+f1 或者终端界面执行命令 startx</p>
+<p>.</p>
+<p>图形界面下进入终端看见以下提示符：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# </span><br></pre></td></tr></table></figure>
+
+<p>root : 用户名</p>
+<p>hadoop100: 自己创建的主机名</p>
+<p>~ ： 当前所在的位置，也就是桌面上的那个主文件夹</p>
+<p>“#”： 提示用户输入指令的提示符</p>
+<p>（root用户，也就是超级管理员的提示符是“#”；如果是一般用户则是“￥”）</p>
+<p>.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# ls</span><br></pre></td></tr></table></figure>
+
+<p>ls :也即list，表示列出当前目录下的所有文件和文件夹</p>
+<p>.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# exit</span><br></pre></td></tr></table></figure>
+
+<p>exit 退出终端界面</p>
+<p>.</p>
+<h4 id="linux的目录结构："><a href="#linux的目录结构：" class="headerlink" title="linux的目录结构："></a>linux的目录结构：</h4><p>Linux系统中一切皆文件。</p>
+<p>.</p>
+<p>“ / “ :Linux的根目录，Linux系统下的所有文件都可以追溯到根目录“/”下</p>
+<p>对linux系统而言，硬件也是以文件的形式来管理的</p>
+<p>.</p>
+<p>windows系统下的路径是C:\a\b….  是反斜杠</p>
+<p>linux系统下的路径是 /root/Desktop/…  是斜杠</p>
+<p>在底层编码是，本身反斜杠\是用来表转义字符的，所以windows下面处理很麻烦</p>
+<p>.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# cd /</span><br></pre></td></tr></table></figure>
+
+<p>cd 表示change direction ,切换目录</p>
+<p>cd / 表示切换到根目录/下面，切换后的提示符如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 /]#</span><br></pre></td></tr></table></figure>
+
+<p>.</p>
+<p>执行ls命令可以看到根目录下的所有文件夹：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 /]# ls</span><br><span class="line">bin   dev  home  lib64  mnt  proc  run   srv  tmp  var</span><br><span class="line">boot  etc  lib   media  opt  root  sbin  sys  usr</span><br></pre></td></tr></table></figure>
+
+<p>**<code>bin:</code>**binary文件夹，也即二进制文件夹，二进制码就是机器码，所以这个文件夹中存放的是所有可以直接执行的命令；</p>
+<p><code>为什么bin 文件夹右下角有一个向外的小箭头呢？</code></p>
+<p>表示这个bin目录并不是直接放在当前根目录下的，他的实际位置可以右键点击属性查看，可以发现他是在usr/bin,也即是在usr文件夹下的,我们所看到的只是一个链接而已，类似快捷方式；</p>
+<p><code>sbin:</code>s 表示系统system,这里面存放的是系统管理员，也就是超级用户boot所能够使用的系统管理工具；</p>
+<p><code>lib:</code>library,是一个库目录，用来存放一些系统和应用程序所需要的一些共享库文件，所以lib下面的文件不要随便删和动；</p>
+<p><code>lib64:</code>存放一些64位相关的比较特殊的一些库文件；</p>
+<p><code>usr:</code>包含了用户所有的应用程序和所需要的文件和数据；</p>
+<p><code>boot:</code>应到启动的时候所需要的一些文件和核心文件，包括一些链接文件和镜像文件。如果要写自己的用户文件千万不要写到这个文件夹。</p>
+<p><code>dev:</code>即device,设备目录，点进去可以看到所有的硬件设备都以文件或者文件夹的形式存放管理</p>
+<p><code>etc:</code>主要放置一些系统管理所需要的配置文件和一些对应的子目录</p>
+<p><code>home:</code>其中每个用户都有一个目录</p>
+<p><code>root:</code>root用户，也就是系统超级管理员的主目录</p>
+<p><code>opt:</code>optional,可选目录，可有可无，linux系统里面给第三方软件包专门留下的目录，如果要额外安装一些软件的话，约定俗成全部安装到这个目录下面</p>
+<p>.</p>
+<p>可以随便动的文件夹：tmp, opt, home, var</p>
+<p>.</p>
+<p>.</p>
+<h4 id="VI-VIM编辑器"><a href="#VI-VIM编辑器" class="headerlink" title="VI/VIM编辑器"></a>VI/VIM编辑器</h4><p>VI： 是unix操作系统和类unix操作系统中最通用的文本编辑器</p>
+<p>VIM： 是从VI发展出来的一个性能更加强大的文本编辑器。</p>
+<p>vim被称为编辑器之神， emacs被称为神之编辑器</p>
+<p>.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@hadoop100 ~]# ls</span><br><span class="line">anaconda-ks.cfg  Desktop  公共  模板  视频  图片  文档  下载  音乐  桌面</span><br><span class="line">[root@hadoop100 ~]# cd 桌面/</span><br><span class="line">[root@hadoop100 桌面]# ls</span><br><span class="line">initial-setup-ks.cfg</span><br><span class="line">[root@hadoop100 桌面]# vim initial-setup-ks.cfg </span><br></pre></td></tr></table></figure>
+
+<p>从上述代码可以看出：</p>
+<p>要用vim打开桌面上的文件initial-setup-ks.cfg，需要先进入桌面文件夹；</p>
+<p>然后用vim命令进入</p>
+<h5 id="vim编辑器的一些基础操作："><a href="#vim编辑器的一些基础操作：" class="headerlink" title="vim编辑器的一些基础操作："></a>vim编辑器的一些基础操作：</h5><p>一进入到编辑器中的模式称为普通模式，在该模式下用户只能进行删除，复制和粘贴操作，不能写入；</p>
+<p>需要按下 “i” 键进入插入模式，便可以自由编辑了；按下esc退出插入模式进入普通模式；</p>
+<p>需要退出时先按下“：”，进入命令模式，再输入q，回车即可。 </p>
+<p>保存操作：   “：”进入命令模式 输入 w；</p>
+<p>还原到上一状态：在普通状态输入u；</p>
+<p>yy: 复制一行    </p>
+<p>8yy： 复制往下的8行；y8y也一样</p>
+<p>p：粘贴</p>
+<p>dd: 往下删除一行；8dd，往下删除八行</p>
+<p>y$: 从当前位置复制到当前行结尾</p>
+<p>y^: 从当前行开头复制到当前位置</p>
+<p>w: 跳到下一个单词头</p>
+<p>b： 跳到前一个单词头</p>
+<p>e： 跳到下一个单词尾</p>
+<p>yw:复制当前单词</p>
+<p>x: 剪切</p>
+<p>shift+x: 往左退格</p>
+<p>r： 更改当前光标位置的字符</p>
+<p>shift+r: 从当前光标位置依次替换后续字符</p>
+<p>gg 或者 shift+f  : 光标移到文档开头</p>
+<p>G：光标移到文档最后一行开头</p>
+<p>6+G： 直接跳到第6行</p>
+<p>进入命令模式输入 set nu:  显示行号</p>
+<p>set nonu  : 取消行号</p>
+<p>:w 保存</p>
+<p>:q  退出</p>
+<p>:wq  保存并退出</p>
+<p>:q!  不保存强制退出</p>
+<p>/word:  搜索文档中所有的单词word</p>
+<p>按n跳转到下一个word，N跳转到上一个word</p>
+<p>:noh 去除高亮</p>
+<p>:s/word1/word2   将当前行的第一个word1替换为word2</p>
+<p>:s/word1/word2/g  将当前行所有的word1替换为word2</p>
+<p>:%s/word1/word2   将所有行的第一个word1替换为word2</p>
+<p>:%s/word1/word2/g  将所有的word1替换为word2</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/26/Linux%E5%85%A5%E9%97%A8%E7%AF%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xuechoa的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/05/26/Linux%E5%85%A5%E9%97%A8%E7%AF%87/" itemprop="url">Linux入门篇</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-26T17:05:05+08:00">
+                2022-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><code>引言：</code> 目前IT行业的服务程序都是跑在服务器上的，其实服务器就是一种特殊的，性能强的电脑。服务器的操作系统绝大多数都是Linux。  总之，只要接触到了服务器，那就必须学习Linux。</p>
+<p>.</p>
+<p>linux 本质是一个操作系统。</p>
+<p>其他操作系统还有： window, macOS </p>
+<p>.</p>
+<h4 id="linux-的诞生："><a href="#linux-的诞生：" class="headerlink" title="linux 的诞生："></a>linux 的诞生：</h4><p>linux之父—linus torvalds(李纳斯.托瓦兹)</p>
+<p>linus的类unix系统，所以叫linux。</p>
+<p>.</p>
+<p>.</p>
+<h4 id="Linux和Unix的渊源："><a href="#Linux和Unix的渊源：" class="headerlink" title="Linux和Unix的渊源："></a>Linux和Unix的渊源：</h4><p>贝尔实验室   </p>
+<p>Ken Thompson—Unix之父</p>
+<p>Dennis Ritchie</p>
+<p>1969,ken主导开发出了一种多用户分时操作系统—Unix（对应之前开发失败的multics）</p>
+<p>设计初衷：简洁高效</p>
+<p>开发系统时觉得用汇编语言写太麻烦了，决定自己开发高级语言（dennis主导）： C语言。</p>
+<p>unix 极其稳定，大型系统一般都使用unix系统，比如银行等大企业。</p>
+<p>linux协议：如果你用了linux写内核，你写出来的东西也必须开源。</p>
+<p>FreeBSD协议：如果你用了FreeBSD写内核，写出来的系统可以不开源，适用于商业化。</p>
+<p>由于unix不开源，所以荷兰教授Andrew Tanenbanm 借鉴unix系统的思想写了新系统Minix系统并开源。</p>
+<p>但是minix系统关于终端仿真器的部分全部没做，因为Andrew Tanenbanm认为上网不是操作系统该包含的部分。</p>
+<p>于是linus torvalds(李纳斯.托瓦兹)基于Minix从终端仿真器开始重新写了一个新系统—-linux，并开源。</p>
+<p>—–git也是李纳斯写的，用于分布式代码管理。</p>
+<p>.</p>
+<h4 id="GNU-Linux"><a href="#GNU-Linux" class="headerlink" title="GNU/Linux"></a>GNU/Linux</h4><p>Richard Stallman—–自由软件运动的倡导者</p>
+<p>他提倡每个人写的软件都应该开源</p>
+<p>1985年，GNU宣言：要开发一套完全自由的，免费的，兼容于Unix的，又不是Unix的操作系统。</p>
+<p><strong>GNU：</strong>GNU is  Not Unix</p>
+<p>1989 GPL协议： 一个自由软件发布的协议</p>
+<p>只要遵循这个协议，那就说明该软件是完全开源的。</p>
+<p>GPL维护用户的权力，而BSD更偏向公司和软件开发者的权力</p>
+<p><img src="/2022/05/26/Linux%E5%85%A5%E9%97%A8%E7%AF%87/%E7%A1%AC%E4%BB%B6%E7%A4%BA%E6%84%8F.png"></p>
+<p>从上图可以看出，计算机的硬件和我们平时接触的那些应用软件之间并不是直接接触的，他们中间还有两层东西：一个是内核，也就是操作系统：操作系统根据软件的需求去控制硬件的动作；另一个是命令解释层：用于将高级语言指令翻译成机器语言，在linux系统中这体现为shell.shell 的直接翻译是 壳，框架的意思。程序员平时输入指令就在shell中，shell将我们的高级语言翻译给操作系统内核，操作系统再去执行相应的操作。</p>
+<p>.</p>
+<p>狭义的Linux：Linux内核；</p>
+<p>广义的Linux： GNU/Linux，除了内核，还包括命令解释层shell和外围应用。</p>
+<p>.</p>
+<p>.</p>
+<h4 id="linux发行版："><a href="#linux发行版：" class="headerlink" title="linux发行版："></a>linux发行版：</h4><p>1.最有名的—-Red Hat系列</p>
+<h4 id="商业版为Red-Hat-Enterprise-Linux"><a href="#商业版为Red-Hat-Enterprise-Linux" class="headerlink" title="商业版为Red Hat Enterprise Linux"></a>商业版为Red Hat Enterprise Linux</h4><p>免费版包括： fedoro 和 CentOS</p>
+<p>CentOS就是除去商标的商业版，稳定性和商业版一样。</p>
+<p>/</p>
+<p>2.debian系列</p>
+<p>ubuntu就是基于debian</p>
+<p>/</p>
+<p>3.suse</p>
+<p>号称世界上最华丽的操作系统</p>
+<p>他的桌面环境是用KDE写的，可能不够稳定，但是极其漂亮华丽；</p>
+<p>免费版本：open SUSE</p>
+<p>/</p>
+<p>目前国内用的最多的就是CentOS和ubuntu</p>
+<p>android 系统和鸿蒙系统的底层内核也都是基于Linux的底层内核</p>
+<p>.</p>
+<p>.</p>
+<h4 id="linux-VSWindows"><a href="#linux-VSWindows" class="headerlink" title="linux VSWindows"></a>linux VSWindows</h4><p>![](./Linux入门篇/linux vs windows.png)</p>
+<p>.</p>
+<p>.</p>
+<p>入门篇完。</p>
+<p>下一篇-&gt; Linux 基础篇</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/26/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xuechoa的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/05/26/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" itemprop="url">深入理解计算机系统_信息的表示和处理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-26T15:13:52+08:00">
+                2022-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="信息的表示和处理"><a href="#信息的表示和处理" class="headerlink" title="信息的表示和处理"></a>信息的表示和处理</h4>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/26/%E6%9B%99%E6%9B%99%E7%9C%9F%E5%A5%BD%E7%9C%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xuechoa的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/05/26/%E6%9B%99%E6%9B%99%E7%9C%9F%E5%A5%BD%E7%9C%8B/" itemprop="url">曙曙真好看</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-26T12:12:26+08:00">
+                2022-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>曙曙真好看，俺好喜欢，嘿嘿！</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>宝贝，俺发现你什么样子的风格都能驾驭欸！</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>这张看着很灵动，又带点成熟</p>
+<p><img src="/2022/05/26/%E6%9B%99%E6%9B%99%E7%9C%9F%E5%A5%BD%E7%9C%8B/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220526122048.jpg"></p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>这张就很甜</p>
+<p><img src="/2022/05/26/%E6%9B%99%E6%9B%99%E7%9C%9F%E5%A5%BD%E7%9C%8B/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220526122108.jpg"></p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>这张就很大， ， ， ， 就很文静，有种知性美，文艺范，，，</p>
+<p><img src="/2022/05/26/%E6%9B%99%E6%9B%99%E7%9C%9F%E5%A5%BD%E7%9C%8B/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220526122112.jpg"></p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>cool  girl， ， ， ，</p>
+<p><img src="/2022/05/26/%E6%9B%99%E6%9B%99%E7%9C%9F%E5%A5%BD%E7%9C%8B/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220526122115.jpg"></p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>清纯稚嫩，想rua（bushi，，，，，，，</p>
+<p><img src="/2022/05/26/%E6%9B%99%E6%9B%99%E7%9C%9F%E5%A5%BD%E7%9C%8B/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220526122119.jpg"></p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<h4 id="爱你，甘曙宝贝（笔芯）"><a href="#爱你，甘曙宝贝（笔芯）" class="headerlink" title="爱你，甘曙宝贝（笔芯）"></a>爱你，甘曙宝贝（笔芯）</h4>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/26/%E5%A6%82%E4%BD%95%E4%BF%9D%E5%AD%98%E5%BE%AE%E4%BF%A1%E8%A7%86%E9%A2%91%E5%8F%B7%E4%B8%8A%E9%9D%A2%E7%9A%84%E8%A7%86%E9%A2%91%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xuechoa的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/05/26/%E5%A6%82%E4%BD%95%E4%BF%9D%E5%AD%98%E5%BE%AE%E4%BF%A1%E8%A7%86%E9%A2%91%E5%8F%B7%E4%B8%8A%E9%9D%A2%E7%9A%84%E8%A7%86%E9%A2%91%EF%BC%9F/" itemprop="url">如何保存微信视频号上面的视频？</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-26T12:12:08+08:00">
+                2022-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="/2022/05/26/%E5%A6%82%E4%BD%95%E4%BF%9D%E5%AD%98%E5%BE%AE%E4%BF%A1%E8%A7%86%E9%A2%91%E5%8F%B7%E4%B8%8A%E9%9D%A2%E7%9A%84%E8%A7%86%E9%A2%91%EF%BC%9F/1653526452154.png"></p>
+<p>手机上有时候保存形式不一定是mp4格式，但是可以根据你看那个视频的时间判断是哪个文件，然后再选择看能不能用视频软件打开，如果打不开那肯定就不是视频。</p>
+<p>确定文件后可以发送到电脑上，更改文件名后缀为.mp4，就转为视频文件了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/26/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%BC%AB%E6%B8%B8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xuechoa的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/05/26/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%BC%AB%E6%B8%B8/" itemprop="url">深入理解计算机系统_计算机系统漫游</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-26T11:47:08+08:00">
+                2022-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id><a href="#" class="headerlink" title></a></h4><h2 id="第一节：计算机系统漫游"><a href="#第一节：计算机系统漫游" class="headerlink" title="第一节：计算机系统漫游"></a>第一节：计算机系统漫游</h2><p>计算机系统由 硬件 和 系统软件 组成。</p>
+<h3 id="一个程序的生命周期如下："><a href="#一个程序的生命周期如下：" class="headerlink" title="一个程序的生命周期如下："></a>一个程序的生命周期如下：</h3><p><strong>第一步：</strong>源程序 或者源文件。这是程序员通过编辑器创建并保存的文本文件，后缀 .c 。</p>
+<p>​    系统中所有的信息：包括磁盘文件、内存中的程序、内存中存放的用户数据以及网络上传送的数据，都是由一串比特表示的。区别不同数据对象的唯一方法就是我们读到这些数据对象时的–上下文。</p>
+<p><strong>第二步：</strong>被编译器驱动程序翻译成一个可执行目标文件。该过程分四步完成：</p>
+<p>​    1.预处理器：将 .c 的源文件处理成.i 的源文件；</p>
+<p>​    2.编译器： 将处理后的.i 源文件 翻译成.s 的文本形式汇编程序；</p>
+<p>​    3.汇编器： 将.s 的文本形式的汇编程序处理成.o 的二进制的可重定位的目标程序；</p>
+<p>​    4.链接器： 将.o 的二进制的可重定位的目标程序链接为没有点后缀的二进制可执行目标程序。</p>
+<p>经过链接的可执行目标文件可以被加载到内存中，由系统执行。</p>
+<p>（二进制 -&gt; 文本 -&gt; 文本 -&gt; 二进制）</p>
+<p>（c -&gt;i -&gt; s -&gt; o -&gt; 空）</p>
+<p><strong>第三步：</strong> 此时之前的.c 源程序已经被编译系统翻译成了可执行目标文件并被存放在磁盘上。</p>
+<p>  （硬件知识）系统的硬件组成包括：总线，i/o设备，主存和处理器。</p>
+<p>​    1.系统主线负责在计算机的各个部件之间传输信息，包括数据，程序。</p>
+<p>​    2.i/o设备也就是计算机外设，包括显示器，鼠标，键盘，等等外接设备。</p>
+<p>​    3.主存是处理器执行程序处理数据时用来临时存储程序和数据的地方。其在物理上来说是由一组动态随机存储器（DRAM）芯片组成的。</p>
+<p>​    4. 处理器，也即中央处理单元（CPU）。这是解释存储在主存中的指令的引擎。处理器的核心是一个大小为一个字节的存储设备，称为程序计数器（PC）。在任何时刻，PC都指向主存中的某一条机器语言指令（即含有该指令的地址）。</p>
+<p>操作系统–可以被看成是应用程序和硬件之间插入的一层软件，所有的应用程序对硬件的操作尝试都必须通过操作系统。</p>
+<p><code>提问：</code> 一个处理器如何能同时执行多个程序呢？比如看论文的同时听音乐，同时网盘后台还在下载视频。</p>
+<p>回答：这是通过处理器在进程之间切换来实现的，这种机制叫做–上下文切换。</p>
+<p>从一个进程到另一个进程的转换是由操作系统内核管理的，内核是操作系统主存中的常驻部分。</p>
+<p><code>提问：</code>请阐述进程和线程的区别与联系？</p>
+<p>回答：通俗来讲，进程可以理解为完成一件事情的进度，比如跑够1km。</p>
+<p>​           而线程表示一件事情同时由几个人完成，比如上述的1km,如果是双线程，则可以安排一个人从起点出发，另一个人从500m处出发，两人同时起跑，合计跑够1km就行。多线程同理。但是体现在计算机上，线程只能处理器，几线程就意味着有几个处理器内核。</p>
+<p>​    一件事就有一个进程，几件事就有几个进程，但同一件事，也即同一个进程可以由多个线程完成。</p>
+<p>文件就是字节序列，仅此而已。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/25/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xuechoa的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/05/25/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/" itemprop="url">操作系统简介</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-25T21:45:54+08:00">
+                2022-05-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="笔记基于B站上面的视频：南京大学2022操作系统-蒋炎岩"><a href="#笔记基于B站上面的视频：南京大学2022操作系统-蒋炎岩" class="headerlink" title="笔记基于B站上面的视频：南京大学2022操作系统-蒋炎岩"></a>笔记基于B站上面的视频：南京大学2022操作系统-蒋炎岩</h4><h3 id><a href="#" class="headerlink" title></a></h3><p>​    什么是操作系统？</p>
+<p>​        Operating System:A body of software, in fact, that is responsible for making it easy to run programs(even allowing you to seemingly run many at the same time), allowing programs to share memory, enabling programs to interact with devices, and other fun stuff like that.(OSTEP)</p>
+<p>概括一下：</p>
+<p>1.能让程序跑起来。浏览器，编译器，IDE，游戏，外挂，任务管理器，杀毒软件，病毒，等等，都是程序；</p>
+<p>2.甚至能让多个程序同时运行（具体原理后面会学到）；</p>
+<p>3.程序共享；</p>
+<p>4.能让程序连接外设，比如你的小U盘；</p>
+<p>5.还有其他很多有趣的事。</p>
+<p>更简单通俗来说，操作系统就是一段管理计算机的软硬件，为其程序提供服务的二进制代码。</p>
+<p>程序视角： 对象+API（application programming interface,应用程序接口）</p>
+<p>硬件视角： 一个C程序</p>
+<h3 id="-1"><a href="#-1" class="headerlink" title></a></h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/">&lt;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">&gt;</a>
+  </nav>
+
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xuechoa</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
